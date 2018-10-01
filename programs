@@ -1,0 +1,58 @@
+#python code
+class alphat:
+    def __init__(self):
+        self.s=str(input('enter string'))
+        self.a=self.s
+        self.v=0
+        self.c=0
+        self.u=0
+        self.l=0
+        self.s=0
+        self.count=0
+    def vowels(self):
+        l=['a','e','i','o','u']
+        for i in self.a:
+            if(i>='a' and i<='z'):
+                if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u'):
+                    self.v+=1
+                    self.l+=1
+                else:
+                    self.c+=1
+                    self.l+=1
+            if(i==' '):
+                self.s+=1
+            if(i>='A' and i<='Z'):
+                if(i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+                    self.v+=1
+                    self.u+=1
+                else:
+                    self.c+=1
+                    self.u+=1
+        print('vowel :',self.v)
+        print(self.c)
+        print(self.s)
+        print(self.u)
+        print(self.l)
+        
+
+c=alphat()
+c.vowels()
+
+class xyz:
+
+    def __init__(self,a,b):
+        self.a=a
+        self.__b=b
+
+    def __display(self):
+        print(self.a,self.__b)
+
+Z=xyz(10,20)
+Z._xyz__display()
+
+
+
+
+
+
+
